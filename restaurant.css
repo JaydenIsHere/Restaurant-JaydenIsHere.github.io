@@ -1,0 +1,707 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+   
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+  }
+/*-----------------------------------------------header section----------------------------------------------------*/
+header{
+    position: fixed;/*fixed the nav bar*/
+    top:0;left:0;
+    width:100%;
+    padding: 1.5rem 5%;
+    box-shadow: 0 .3rem 2rem rgba(0,0,0,.2);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height:100px;/*fixed the high of nav bar boc*/
+    z-index: 1;
+
+}
+.btn{
+background-color: #de1507;
+border-radius: 25px;
+font-weight: 500;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(245, 69, 69);
+    color:rgb(212, 209, 209); 
+}
+.Logo img{
+    height:8rem;  
+}
+header .nav-bar ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+header .nav-bar ul li{
+    color: #000;
+    position:relative;
+    
+}
+header .nav-bar ul li a{
+    font-size: 1.3rem;
+    color:#666;
+    padding: 0.2rem 1.2rem;
+}
+header .nav-bar ul li a::after{
+    content:'';/*I don't know*/
+    background: #de1507;
+    width:0;/*hide the bottom line by default*/
+    height:2px;
+    position:absolute;/*cild element follow parent element*/
+    bottom:-8px;
+    left:0;
+    transition: width 0.8s;
+}
+
+header .nav-bar ul li a:hover{
+    color:#de1507;
+}
+
+
+header .nav-bar ul li a:hover::after{
+    width:100%;
+}
+.icon-container{
+cursor: pointer;
+display:none;/*make the bar vertical*/
+}
+
+.bar1, .bar2,.bar3{
+    width:35px;
+    height:5px;
+    background-color: rgb(8, 8, 8);
+    margin:6px 0;
+    transition:0.4s;
+}
+.icon-container:active{
+  box-shadow:0 .3rem 2rem #de1507;
+}
+
+/*------------------------------------Home page section--------------------------------------------------------*/
+.home_section{
+    max-width:1250px;/*page's size won't go beyond 1300px*/
+     margin:auto;/*auto to keep page center*/
+     padding-left: 25px;
+     padding-right: 25px;
+}
+.row{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.col-2{
+    flex-basis:50%;/*seperate two main column*/
+    min-width:350px;
+}
+.col-2 img{
+    padding:40% 0;
+    padding-right:60%;
+    width:200%;
+}
+
+
+.col-2 h1{
+    margin:25px 20px;
+    font-size:50px;
+    color:#383837
+}
+.col-2 p{
+    font-size:16px;
+    margin:0 0 20px 20px;
+    font-weight: 400;
+}
+.col-2 .btn_orderNow{
+    display: inline-block;
+    margin:20px;
+    padding:.8rem 2rem;
+    font-size:25px; 
+    font-weight: 500;
+    color:#fff;
+    background-color: #de1507;
+    border-radius: 25px; 
+}
+.col-2 .btn_orderNow:hover{
+    background-color: rgb(245, 69, 69);
+    color:rgb(212, 209, 209);    
+}
+
+.square_shape{
+    position:absolute;
+    top:5rem; right:0;
+    border: 50px solid #de1507;
+    border-radius: 18px;
+    transform:rotate(-40deg);
+    height:35rem;
+    width:35rem;
+    z-index:-2;
+    animation: animte 0.85s linear 1;
+}
+@keyframes animte{
+    0%{
+        transform:rotate(40deg) translateY(-40rem);
+    }
+}
+/*----------------about section-------------------*/
+.about_section{
+    max-width:1250px;/*page's size won't go beyond 1300px*/
+    max-height: 900px;
+    margin:1rem auto 3rem;/*auto to keep page center*/
+}
+.about_section .row{
+    justify-content: center;
+}
+.about_image
+{
+height:40rem;
+background:url("image/about-frame-img.png"),url("image/about-photo.jpg") no-repeat;
+background-size: cover;
+background-position: center;
+background-blend-mode: screen;
+}
+.about_section .col-2
+{
+    padding:3rem;
+}
+.about_col
+{
+    box-shadow: 0 .3rem 2rem rgba(0,0,0,.2);
+    border-radius: 20px;
+}
+.about_section h1{
+    font-size: 70px;
+    color: #fff;
+    background-color: #de1507;
+    border-radius: 5px;
+}
+.about_section p
+{
+    font-size: 15px;
+    font-weight: 500;
+}
+/*-------------------------menu section---------------------*/
+.menu_section
+{ 
+    max-width:1250px;/*page's size won't go beyond 1300px*/
+    margin:auto;/*auto to keep page center*/
+    padding-left: 50px;
+    padding-right: 35px;
+    text-align: center;
+}
+.menu_section h1
+{
+    color:#000;
+    font-size: 4rem;
+    margin-top: 5rem;
+    padding:1rem ;
+}
+.menu_section h1 span
+{
+    color:#de1507
+}
+
+.menu_section img{
+    padding:0%;
+ object-fit: cover;
+    width:100%;
+    
+}
+.menu_section .menu_image{
+    margin:2rem -4rem;    
+    padding:1rem;
+    box-shadow: 0 .3rem 2rem rgba(0,0,0,.2);
+    border-radius: 5px;
+    background-color: #de1507;
+}
+.menu_section ul{
+    display:flex;
+    justify-content: space-around;
+    border-top: 6px dashed #de1507;
+    border-bottom: 6px dashed #de1507;
+    padding:1rem 0;
+}
+.menu_section .info{
+    padding:0.4rem 0;
+    padding-left:2.5rem;
+}
+.menu_section .info h3{
+    font-size:22px;
+    padding-right:8rem;
+}
+.menu_section .info h3 span
+{
+    color:#de1507;
+    font-size: 28px;
+}
+.menu_section .info p{
+    text-align: left;
+}
+/*---------------popular section----------------*/
+.popular_section
+{
+    margin:auto;/*auto to keep page center*/
+    background-image: url('image/popular-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.popular_section h1{
+    color:#000;
+    font-size: 4rem;
+    margin-top: 5rem;
+    padding: 0.5rem ;
+    text-align: center;
+}
+.popular_section span{
+    color:#de1507;
+}
+.popular_row/*the only container to control the 4 boxes*/
+{
+    max-width:1250px;/*page's size won't go beyond 1300px*/
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+.popular_section .box
+{
+    background-color:hsl(44, 0%, 100%) ;
+    width:25rem;
+    box-shadow: 0 .3rem 2rem rgba(0,0,0,.2);
+    padding:1.5rem;
+    margin: 1.5rem;/*create the space for space around*/
+    text-align: center;
+    border-radius: 1rem;
+    transition:transform 0.5s;
+}
+.popular_section .box:hover{
+    transform:scale(99%);
+}
+
+.popular_section img{/*This part is very important to make the different pic to be same size*/
+    height:15rem;
+    width:100%;
+    object-fit: cover;/*after set the height and width make sure the image fit in*/
+}
+
+.popular_row .box h3{
+    font-size:28px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    padding:10px 0; 
+    color:#464545
+}
+.rating .fas
+{
+    font-size: 20px;
+    color:#ffeb33
+}
+.popular_row .box .price
+{   padding:5px 0; 
+    font-size:1.7rem;
+    font-weight: 700;
+    color:#464545
+}
+
+.popular_row .box a{
+   color:#fff;
+}
+/*--------------gallery section--------------*/
+.gallery_section
+{
+    max-width:1250px;/*page's size won't go beyond 1300px*/
+    margin:auto;/*auto to keep page center*/
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+.gallery_section .gallery_row
+{
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.gallery_row .gallery-image/*this div is to help flex box to manipulate items*/
+{
+/*width and hight are force image to be same size*/
+/*don't add padding to avoid extra black space on the side, 
+when you need drop down hover effect*/
+margin:2.2rem;
+width:20rem;
+height:22rem;
+text-align: center;
+position:relative;
+overflow: hidden;
+}
+.gallery_row h3{
+    position:absolute;
+    top:100%;left:50%;/*push words down to bottom*/
+    transform:translate(-50%, -50%);/*let things move in the middle*/
+    color:#fff;
+    text-align: center;
+    font-size: 3rem;
+    opacity: 0;/*hide the words by default*/
+}
+.gallery_row .gallery-image:hover h3{/*word apearing after the back drop down*/
+    top:50%;
+    opacity: 1;
+    transition-delay: 0.2s;
+    cursor: pointer;
+}
+.gallery_row .gallery-image::before
+{
+    content:'';
+    position:absolute;
+    top:-100%;left:0;/*hide the deop down by default*/
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,.8);
+    cursor: pointer;
+    transition:0.2s linear;
+}
+.gallery_row .gallery-image:hover::before
+{
+top:0;
+}
+.gallery_row .gallery-image img{
+    width:100%;
+    height:22rem;/*define the high*/
+    object-fit: cover;
+    
+}
+
+.gallery_section h1{
+    color:#000;
+    font-size: 4rem;
+    margin-top: 3rem;
+    padding:1rem ;
+    text-align: center;
+}
+
+.gallery_section h1 span{
+    color:#de1507;
+}
+
+
+/*---------------------------place order---------------------------*/
+.place_order
+{
+    margin:auto;/*auto to keep page center*/
+    background-image: url('image/order-background.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:55rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+.place_order h1{
+    color:#000;
+    font-size: 4rem;
+    margin-top: 5rem;
+    padding:1.5rem ;
+    text-align: center;
+}
+.place_order h1 span{
+    color:#de1507;
+}
+
+.place_order .row{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.place_order .col-2
+{
+    flex:1 1 50%; 
+}
+.place_order .order_col
+{
+    flex:1 1 40%;
+}
+
+.place_order  img{
+   width:80%;
+   height: 35.4rem;
+   object-fit: cover;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius:10px;
+   margin-right:10rem;
+   margin-top: 3px;
+}
+.place_order form{/*the white box*/
+
+    background-color: #fff;
+    padding:1rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+    width:80%;
+    margin-left:10rem;
+}
+.place_order form .box{/*individual box*/
+padding:0.5rem;
+margin:1rem 0;
+font-size:1.3rem;
+color:#333;
+text-transform: none;
+border:none;
+background-color: #f0f0f0;
+width:100%;
+border-radius: 10px;
+box-shadow: 0 .2rem 0.5rem rgba(0,0,0,.2);
+}
+.place_order form textarea
+{
+    height: 10rem;
+    resize:none;
+}
+
+/*-------footer---------*/
+
+.footer_section
+{
+    background-color:#333;
+    padding:1rem 7%;
+}
+.footer_section .row{
+    display:flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap:wrap;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+.footer_section .col-4{
+   
+    flex:1 1 25%;
+    min-width:250px ;
+}
+.footer_section .col-4 h3{
+font-size: 2rem;
+color:#f0f0f0;
+font-weight: 500;
+padding:1rem 0;
+}
+.footer_section .col-4 p{
+    font-size: 1rem;
+    color:#f0f0f0;
+    padding:0.5rem 0;
+}
+.col-4 i{
+    color:#de1507;
+}
+.footer_section .col-4 a{
+    display: block;
+    font-size: 1rem;
+    color:#f0f0f0;
+    padding:0.5rem 0;
+}
+.footer_section .col-4 a:hover{
+    color:#666;
+}
+.footer_section .col-4 p:hover{
+    color:#666;
+}
+
+.copyright
+{
+    color: #000;
+   font-size: 1.5rem;
+    padding: 1.3rem 10rem;
+    border-top: 3px solid #de1507;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*---------media query-----------*/
+@media only screen and (max-width:950px)
+{
+    .square_shape{
+      display:none;
+    }
+    .home_section{
+        margin-top:15%;
+    }
+    .col-2 h1
+    {
+        font-size:45px;
+    }
+    .place_order  img{
+        display: none;
+     }
+     .place_order .col-2
+{
+    flex:1 1 100%; 
+    text-align: center;
+}
+.place_order form{/*the white box*/
+
+    background-color: #fff;
+    padding:1rem;
+    border-radius: 10px;
+    width:80%;
+    margin-left:5rem;
+}
+
+}
+
+@media only screen and (max-width:820px)
+{
+    .menu_section .col-2
+{
+    flex-basis: 75%;
+}
+}
+
+@media only screen and (max-width:764px){
+  
+    
+    header{
+        position:fixed;
+        
+    }
+    header .nav-bar{
+        position:absolute;
+        display:flex;
+        top:6.1rem; left:50rem;
+        width:100%;
+        background-color:rgba(12, 12, 12, 1);
+        transition: left 0.5s;
+        overflow: hidden;
+    }
+    .home_section{
+        margin-top:20%;
+    }
+      
+    header .nav-bar ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin:1rem; 
+    }
+    header .nav-bar ul li{
+        padding:1.2rem 0;
+        width:100%;
+        cursor: pointer;
+    }
+    header .nav-bar ul li a{
+        color:#fff;
+        padding:0;
+        padding-left: 20px;
+        border-left: 3px solid #de1507;
+    }
+    header .nav-bar ul li a:hover
+       {
+           background-color: transparent;
+           color:#de1507
+       }
+    header .nav-bar ul li a:hover::after
+    {
+        width:0%;
+    }
+    .icon-container{
+        display:inline-block;
+    }
+    .col-2
+    {
+    text-align: center;
+    }
+    .col-2 h1
+    {
+        font-size:40px;
+    }
+    .main_image img
+    {
+     padding:0%;
+     margin-top:3rem;
+     margin-left:-11rem;
+     width:200%;
+    }
+
+
+.about_section .about_image
+{
+    width:19rem;
+    height: 23rem;
+}
+.menu_section .info
+{
+padding-left: 0%;
+}
+.menu_section .info h3{
+    display:inline;
+    padding:0%;
+    font-size:25px;
+}
+}
+@media only screen and (max-width:717px)
+{
+    .about_section .col-2
+    {
+        flex-basis: 80%;
+    }
+
+.about_section .about_image
+{
+    width:100%;
+}
+.place_order form{/*the white box*/
+
+    background-color: #fff;
+    padding:1rem;
+    border-radius: 10px;
+    width:80%;
+    margin-left:2.5rem;
+}
+.Branches,.Quick-link
+{
+    display: none;
+}
+.copyright
+{
+    padding:1rem 0 ;
+ 
+}
+.footer_section .col-4{
+    flex:50%;
+    max-width: 200px;
+}
+.footer_section .row{
+    display: flex;
+    justify-content: space-around;
+}
+
+}

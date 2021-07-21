@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- aos css cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="restaurant.css">
+    <title>Responsive Restaurant Web page</title>
+</head>
+<body>
+    <!------------ hearder section ------------->
+<header>
+     <a href="#" class="Logo"><img src="image/Logo.png"></a> 
+    <nav class="nav-bar" id="toggleDropdown">
+        <ul>
+            <li><a href="#Home_section"  onclick="close_nav()">Home</a></li>
+            <li><a href="#About_section"  onclick="close_nav()">About</a></li>
+            <li><a href="#Menu_section"  onclick="close_nav()">Menu</a></li>
+            <li><a href="#Popular_section"  onclick="close_nav()">Popular</a></li>
+            <li><a href="#Gallery_section"  onclick="close_nav()">Gallery</a></li>
+            <li><a href="#PlaceOrder_section"  onclick="close_nav()">Order</a></li>
+        </ul>
+    </nav>
+    <!----------menu bar icon---------->
+    <div class="icon-container" onclick ="myFunction()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+</header>
+
+  <!---------- Home section -------->
+  <section class="home_section" id="Home_section">
+    <div class="row home_section_row">
+        <div class="col-2" data-aos= "fade-right"><!------there are two main element -------->
+<h1>We Belive Good Food Offer Great Smile</h1>
+<p>We have different kinds of burgers and desserts that will surely suit your taste, and we offer a very affordable price. This business is not new on the market, and we have four branches already. I am attaching a menu for you. I hope you can drop by to our store so that you can try our very yummy burgers and desserts</p>
+<a href="" class="btn_orderNow">Order Now</a>
+        </div>
+        <div class="square_shape"></div>
+        <div class="col-2 main_image" data-aos= "fade-up">
+            <img src="image/Main-page.png" >
+        </div>
+    </div>
+</section>
+
+<!--------------------- about section -------------------------->
+ <section class="about_section" id="About_section"> 
+    <div class="row">
+        <div class="col-2 about_image_col" data-aos= "fade-right">
+            <div class="about_image"></div>
+        </div>
+        <div class="col-2 about_col" data-aos= "fade-left">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae sequi laborum deserunt vel ut magnam dignissimos illo iure consectetur animi, expedita saepe fugit. Molestiae doloremque aut modi neque praesentium corporis.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae sequi laborum deserunt vel ut magnam dignissimos illo iure consectetur animi</p>
+        </div>
+    </div>
+</section> 
+
+
+<!--------------------------menu section ------------------------------>
+
+<section class="menu_section" id="Menu_section">
+    <h1 >Our Dilicious <span>Menu</span></h1>
+    <ul class = "menu_btn" data-aos= "fade-down">
+        <li class = "btn" onclick="Breakfast_image()">Breakfast</li>
+        <li class = "btn" onclick="Lunch_image()">Lunch</li>
+        <li class = "btn" onclick="Dinner_image()">Dinner</li>
+        <li class = "btn" onclick="Desert_image()">Desert</li>
+    </ul>
+    <div class="row">
+        <div class="col-2" data-aos= "fade-right">
+            <img src="image/Menu-1.jfif" class = "menu_image" id="menuImg">
+        </div>
+        <div class="col-2" data-aos= "fade-left">
+            <div class="info">
+                <h3><span>1.</span>We serve the best food in Singapore</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, porro praesentium laboriosam earum nulla molestias impedit error ducimus? </p>
+            </div>
+            <div class="info">
+                <h3><span>2.</span>We serve the best food in Singapore</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, porro praesentium laboriosam earum nulla molestias impedit error ducimus?</p>
+            </div>
+            <div class="info">
+                <h3><span>3.</span>We serve the best food in Singapore</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, porro praesentium laboriosam earum nulla molestias impedit error ducimus?</p>
+            </div>
+            <div class="info">
+                <h3><span>4.</span>We serve the best food in Singapore</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, porro praesentium laboriosam earum nulla molestias impedit error ducimus?</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!--------------------------Popular section ------------------------------>
+<section class="popular_section" id="Popular_section">
+   
+ <h1>Most Popular <span>Food</span></h1>
+    <div class="popular_row">
+       
+            <div class="box">
+                  <img src="image/popular-Food-1.jpg">
+                  <h3>Popular Food</h3>
+                  <div class="rating">  
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                    <div class="price">$30</div>
+                    <a href="#" class ="btn">Add To Cart</a>
+                  
+
+            </div>
+            <div class="box" >
+                  <img src="image/popular-Food-2.jpg">
+                  <h3>Popular Food</h3>
+                  <div class="rating"> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                    <div class="price">$30</div>
+                    <a href="#" class ="btn">Add To Cart</a>
+                  
+            </div>
+    
+    <div class="box" >
+                  <img src="image/popular-Food-3.jpeg">
+                  <h3>Popular Food</h3>
+                  <div class="rating"> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                    <div class="price">$30</div>
+                    <a href="#" class ="btn">Add To Cart</a>
+                  
+    </div>
+    <div class="box" >
+                   <img src="image/popular-Food-4.jpg">
+                   <h3>Popular Food</h3>
+                   <div class="rating"> 
+                   <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  </div>                  
+                   <div class="price">$30</div>
+                    <a href="#" class ="btn">Add To Cart</a>
+                   
+    </div>
+
+    </div>
+</section>
+
+<!--------------------------Food Gallery Section ------------------------------>
+<section>
+    <div class="gallery_section" id="Gallery_section">
+        <h1>Our Food <span>Gallery</span></h1>
+        <div class="gallery_row">
+            <div class = "gallery-image" data-aos= "fade-down">
+                <img src="image/Gallery-1.jpeg">
+                <h3>Delicious Food</h3>
+            </div>
+            <div class = "gallery-image" data-aos= "fade-down">
+                <img src="image/Gallery-2.jpeg">
+                <h3>Delicious Food</h3>
+            </div>
+            <div class = "gallery-image" data-aos= "fade-down">
+                <img src="image/Gallery-3.jpeg">
+                <h3>Delicious Food</h3>
+            </div>
+            <div class = "gallery-image" data-aos= "fade-down">
+                <img src="image/Gallery-4.jpeg">
+                <h3>Delicious Food</h3>
+            </div>
+            <div class = "gallery-image" data-aos= "fade-down">
+                <img src="image/Gallery-5.jpg">
+                <h3>Delicious Food</h3>
+            </div>
+            <div class = "gallery-image" data-aos= "fade-down">
+                <img src="image/Gallery-6.jpg">
+                <h3>Delicious Food</h3>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--------------------------Place Order section------------------------------>
+
+<section>
+    <div class="place_order" id="PlaceOrder_section">
+        <h1>Place your <span>Order</span></h1>
+        <div class="row">
+            <div class="col-2" data-aos= "fade-right">
+                <form action="#">
+<input type="text" placeholder ="your name" class ="box"required>
+<input type="email" placeholder ="your email" class ="box">
+<input type="password"placeholder ="your password" class ="box"required>
+<input type="text"placeholder ="your number"class ="box">
+<textarea name="message" cols="30" rows="10" placeholder ="your address" class ="box"></textarea>
+<input type="submit" value="Register" class="btn">
+</form>
+            </div>
+
+            <div class="order_col" data-aos= "fade-left">
+    <img src="image/order_image-2.jpg" >
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------------ footer---------------- -->
+
+
+<div class="footer_section">
+    <div class="row">
+        <div class="col-4">
+            <h3>Contact Info</h3>
+               <p><i class="fas fa-map-marker-alt"></i> Singapore </p>
+               <p><i class="fas fa-envelope"></i> Example@gmail.com </p>
+               <p><i class="fas fa-phone"></i> +65 62501258 </p>
+               <p><i class="fas fa-phone"></i> +65 90001222 </p>
+        </div>
+        <div class="col-4 Branches">
+            <h3>Branches Location</h3>
+            <a href="">Singapore</a>
+            <a href="">India</a>
+            <a href="">China</a>
+            <a href="">Japan</a>
+        </div>
+        <div class="col-4 Quick-link">
+            <h3>Quick Links</h3>
+            <a href="">Home</a>  
+             <a href="">About</a> 
+            <a href="">Menu</a>   
+            <a href="">popular</a>   
+            <a href="">Gallery</a>   
+            <a href="">Order</a>   
+        </div>
+        <div class="col-4">
+            <h3>Follow us</h3>
+            
+                <a href="">Face Book</a>   
+                <a href="">Instagram</a>   
+                <a href="">Twitter</a>   
+                <a href="">Youtube</a>   
+
+        </div>
+    </div>
+        <!------Horizontal sttraight line------------->
+        <p class ="copyright">Copyright 2021 - Responsive Web</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+   let toggleDropdown= document.getElementById("toggleDropdown");
+   var menu_image = document.getElementsByClassName("menu_image");
+   var toggle_image =document.getElementsByClassName("toggle_image");
+//    let auto_close = document.getElementById("auto_close");
+   toggleDropdown.style.left = "50rem";
+               
+    function myFunction(){       
+            if(toggleDropdown.style.left == "0px")
+            {
+               toggleDropdown.style.left = "50rem";
+               
+           }
+            else
+            {
+              toggleDropdown.style.left = "0px";
+             
+            }
+        }
+        function close_nav(){
+       if(toggleDropdown.style.left == "50rem")
+           {
+            toggleDropdown.style.left = "0rem";
+           }
+       else{
+           toggleDropdown.style.left = "50rem";
+           }
+        }
+
+        function Breakfast_image(){
+        var image = document.getElementById("menuImg");
+        image.src = "image/Menu-1.jfif";
+    }
+    function Lunch_image(){
+        var image = document.getElementById("menuImg");
+        image.src = "image/Menu-2.jpg";
+    }
+    function Dinner_image(){
+        var image = document.getElementById("menuImg");
+        image.src = "image/Menu-3.jpg";
+    }
+    function Desert_image(){
+        var image = document.getElementById("menuImg");
+        image.src = "image/Menu-4.jpg";
+    }
+
+    
+</script>
+
+<!-- aos js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
+<!-- initializing aos -->
+<script>
+    AOS.init({
+        delay:200,
+        duration:700
+    })
+</script>
+
+
+
+
+
+
+
+    
+</body>
+</html>
