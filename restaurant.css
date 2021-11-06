@@ -530,6 +530,14 @@ header .nav-bar ul li a:hover::after {
 .thankyou_info {
   padding-top: 2rem;
 }
+.goBack_btn {
+  margin: 3rem;
+}
+.goBack_btn a {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
 /*---------media query-----------*/
 @media only screen and (max-width: 950px) {
   .square_shape {
