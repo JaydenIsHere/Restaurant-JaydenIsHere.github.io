@@ -512,6 +512,24 @@ header .nav-bar ul li a:hover::after {
   text-align: center;
 }
 
+/*------------thank you---------------*/
+.thankyou {
+  margin: 30vh 0;
+}
+
+.thankyou_wrap {
+  height: 10rem;
+  display: block;
+  width: auto;
+  background-color: #de1507;
+  color: #f0f0f0;
+}
+.thankyou_wrap h1 {
+  text-align: center;
+}
+.thankyou_info {
+  padding-top: 2rem;
+}
 /*---------media query-----------*/
 @media only screen and (max-width: 950px) {
   .square_shape {
