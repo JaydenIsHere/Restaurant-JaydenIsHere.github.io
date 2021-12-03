@@ -290,11 +290,12 @@ header .nav-bar ul li a:hover::after {
   color: #de1507;
 }
 .popular_row/*the only container to control the 4 boxes*/ {
-  max-width: 1250px; /*page's size won't go beyond 1300px*/
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 32rem);
+  grid-template-rows: repeat(2, 40rem);
+  padding: 2rem;
 }
 
 .popular_section .box {
@@ -302,7 +303,7 @@ header .nav-bar ul li a:hover::after {
   width: 25rem;
   box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
   padding: 1.5rem;
-  margin: 1.5rem; /*create the space for space around*/
+  margin: 1.5rem auto; /*create the space for space around*/
   text-align: center;
   border-radius: 1rem;
   transition: transform 0.5s;
@@ -642,6 +643,22 @@ header .nav-bar ul li a:hover::after {
     height: 24rem;
     margin-top: 1rem;
   }
+  .popular_row/*the only container to control the 4 boxes*/ {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .popular_section .box {
+    background-color: hsl(44, 0%, 100%);
+    width: 28rem;
+    box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
+    padding: 1.5 0rem;
+    margin: 1.5rem auto; /*create the space for space around*/
+    text-align: center;
+    border-radius: 1rem;
+    transition: transform 0.5s;
+  }
 }
 
 @media only screen and (max-width: 745px) {
@@ -810,5 +827,15 @@ header .nav-bar ul li a:hover::after {
   }
   .about_col h1 {
     font-size: 3rem;
+  }
+  .popular_section .box {
+    background-color: hsl(44, 0%, 100%);
+    width: 21rem;
+    box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin: 1.5rem auto; /*create the space for space around*/
+    text-align: center;
+    border-radius: 1rem;
+    transition: transform 0.5s;
   }
 }
