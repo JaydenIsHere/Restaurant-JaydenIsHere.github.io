@@ -464,6 +464,12 @@ header .nav-bar ul li a:hover::after {
   width: 80%;
   margin-left: auto;
 }
+form input[type='submit'] {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 .place_order form .box {
   /*individual box*/
   padding: 0.5rem;
